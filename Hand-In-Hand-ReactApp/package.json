@@ -1,0 +1,21 @@
+{
+  "name": "hand-in-hand-reactapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix hand-in-hand-react",
+    "dev": "concurrently \"npm run server\" \"npm run hand-in-hand-react\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.2.1",
+    "nodemon": "^1.19.1"
+  }
+}
