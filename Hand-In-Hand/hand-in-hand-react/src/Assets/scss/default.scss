@@ -1,0 +1,500 @@
+@import "_config.scss";
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: $white;
+    margin-top: auto;
+        width: 100%;
+        box-shadow: 
+            5px 3px 6px rgba(0, 0, 0, 0.16),
+            5px 3px 6px rgba(0, 0, 0, 0.23);
+    .logo {
+        background-color: #333;
+        justify-content: center;
+        align-items: center;
+        .logoImage {
+            max-width: 125px;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        width: 80%;
+        margin: 2em auto;
+        
+        
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin-right: 2em;
+    }
+
+    .addWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    .flexColCenter {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        margin: .25em;
+        color: #6698cb;
+        &:hover {
+            color: #fa5a5a;
+            @include transition(.4s ease-in-out);
+        }
+    }
+
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    font-family: "ralewaysemibold", Helvetica;
+    display: flex;
+    flex-direction: column;
+    
+    .logo {
+        background-color: #333;
+        .logoImage {
+            max-width: 65px;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+        box-shadow: 
+            5px 3px 6px rgba(0, 0, 0, 0.16),
+            5px 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    
+    
+    .header a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.25em;
+    }
+    
+    .header a:hover {
+        background-color: #ddd;
+        color: black;
+        text-decoration: none;
+    }
+    
+}
+
+.mainTitle {
+    /*margin-top: .5em;*/
+}
+
+#carouselExampleIndicators {
+    //width: 60%;
+    width: 100%;
+    margin: 0 auto;
+   // margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+.carousel-caption {
+    background-color: $black;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+    bottom: 0px;
+
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactSocials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+    img {
+        width: 3em;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.paragraphBody {
+    margin: 1em 1em;
+    width: 80%;
+    text-align: center;
+}
+
+.courses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.courses-image {
+    width: 100%;
+    height: auto;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widen {
+    width: 100%;
+}
+
+.image-hover {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color:white;
+}
+
+.header-courses {
+    margin: .5em;
+}
+
+.submitStyles {
+    width: 100%;
+    margin-top: .5em;
+    text-decoration: none;
+    background: #fa5a5a;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.21);
+    /*border-bottom: 5px solid rgba(0,0,0,0.21);*/
+    box-shadow: 0 5px #9b3636;
+	border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    outline: none;
+}
+
+.submitStyles:hover {
+    background: #da4b4b;
+    cursor: pointer;
+}
+
+.submitStyles:active {
+    box-shadow: 0 3px rgb(77, 0, 0);
+    transform: translateY(2px);
+}
+
+
+iframe {
+    width: 60%;
+    /*height: 580px;*/
+    /*height: 43em;*/
+    min-height: 38em;
+}
+
+.schedule_paragraph {
+    width: 50%;
+}
+
+/*scss override for calendar*/
+
+
+
+/*added from php proj*/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 1em;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+.headerContact {
+    margin-top: 1em;
+}
+
+label {
+    margin: 0;
+}
+
+input[type=email], input[type=text], textarea[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea[type=text]{
+    height: 200px;
+}
+
+input[type=email]:focus, input[type=text]:focus, textarea[type=text]:focus {
+    outline: none;
+    border: 1px solid #fa5a5a;
+}
+
+.form-signin {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.form-container {
+    padding: 16px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* The Modal (background) */
+#ModalOpen {
+    display: block;
+}
+#ModalClosed {
+    display: none;
+}
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modalContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modalHead {
+    padding: 2px 16px;
+    background-color: #191314;
+    color: white;
+}
+  
+.modalBody {
+    padding: 2px 16px;
+}
+
+.modalFoot {
+    padding: 2px 16px;
+    background-color: #191314;
+    color: white;
+    text-align: right;
+}
+
+
+/*MOBILE STYLES HERE*/
+@media only screen and (max-width: 768px) {
+
+
+    /* HEADER */
+        .content {
+            margin-top: 4.8em;
+        }
+
+        .courses_content {
+            margin-top: 3.7em;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+
+            .header {
+                justify-content: center;
+                align-items: center;
+            }
+            .barsIcon {
+                margin-left: auto;
+                margin-right: 5%;
+                font-size: 2em;
+                color: white;
+            }
+    
+            #menuOpen {
+                visibility: visible; /* shows sub-menu */
+                opacity: 1;
+                z-index: 1;
+                transform: translateY(0%);
+                transition-delay: 0s, 0s, 0.4s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+            }
+    
+            #menuClosed {
+               /* display: none;*/
+                visibility: hidden; /* hides sub-menu */
+                opacity: 0;
+            }
+    
+            .linkContainer {
+                /*margin: 1em 0;
+                padding: 0;*/
+                transform: translateY(-2em);
+                transition: all 0.4s ease-in-out 0s, visibility 0s linear 0.1s, z-index 0s linear 0.01s;
+                background: rgb(83, 83, 83);
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                z-index: 2;
+                top: 3.8em;
+                width: 100%;
+                
+    
+                li {
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    margin-left: 2em;
+                }
+            }
+    
+            a {
+                color: rgba(245, 245, 245, 0.705);
+                border-bottom: 1px solid black;
+                margin:  .25em 2em;
+            }
+    
+            a:active, a:hover {
+                background: grey;
+                color: white;
+            }
+        }
+
+    /* CAROUSEL ON HOMEPAGE */
+    #carouselExampleIndicators {
+        margin-top: 3.7em;
+    }
+    
+    /* FOOTER */
+    footer {
+
+    }
+
+    /* contact us page */
+    .form-signin {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    /*schedule page*/
+    iframe {
+        width: 100%;
+        min-height: 23em;
+    }
+
+    .submitStyles:hover {
+        background: #fa5a5a;
+        cursor: pointer;
+    }
+
+    .submitStyles:active {
+        
+    }
+    
+}
+    

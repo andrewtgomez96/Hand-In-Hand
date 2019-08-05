@@ -1,0 +1,75 @@
+/*
+Vars
+*/
+$black: #010000d0;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+
+/* 
+Google Fonts Import
+*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+/*
+mixins
+have to be defined at top to reference below
+*/
+
+@mixin translateY($e){
+    -webkit-transform: translateY($e);
+        -moz-transform: translateY($e);
+            transform: translateY($e);
+}
+
+@mixin transition($e){
+    -webkit-transition: $e;
+        -moz-transition: $e;
+            transition: $e;
+}
+
+/*
+fonts
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+.container-fluid {
+    line-height: 24px;
+}
+
+
